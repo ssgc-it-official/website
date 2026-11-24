@@ -147,7 +147,7 @@ Route::get('important-numbers', ImportantNumbers::class)->name('important-number
 Route::get('customer-facilitation-centers', CustomerFacilitationCenters::class)->name('customer-facilitation-centers');
 Route::get('check-for-leakages', CheckForLeakages::class)->name('check-for-leakages');
 Route::get('safety-education', SafetyEducation::class)->name('safety-education');
-require __DIR__.'/settings.php';
+require __DIR__ . '/settings.php';
 
 // Admin Section
 Route::name('admin.')
@@ -177,3 +177,22 @@ Route::name('admin.')
         Route::livewire('blacklisted-firms/create', 'pages::admin.blacklist.create')->name('blacklist.create');
         Route::livewire('blacklisted-firms/{blacklistedFirm}/edit', 'pages::admin.blacklist.edit')->name('blacklist.edit');
     });
+
+
+// urooj routes
+// Document Sections
+Route::livewire('document-sections', 'pages::document-sections.index')->name('document-sections.index');
+Route::livewire('document-sections/create', 'pages::document-sections.form')->name('document-sections.create');
+Route::livewire('document-sections/{documentSection}/edit', 'pages::document-sections.form')->name('document-sections.edit');
+
+Route::get('document-sections/{documentSection:slug}/file', function (\App\Models\DocumentSection $documentSection) {
+    $media = $documentSection->getFirstMedia('pdf');
+    abort_unless($media, 404);
+    return redirect($media->getUrl());
+})->name('document-sections.file');
+
+Route::get('document-sections/{documentSection:slug}/download', function (\App\Models\DocumentSection $documentSection) {
+    $media = $documentSection->getFirstMedia('pdf');
+    abort_unless($media, 404);
+    return $media;
+})->name('document-sections.download');
