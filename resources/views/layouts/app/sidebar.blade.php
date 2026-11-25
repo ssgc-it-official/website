@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.head')
     </head>
-    <body class="min-h-screen bg-white dark:bg-zinc-800">
+    <body class="min-h-screen bg-white">
         <flux:sidebar sticky collapsible="mobile" class="border-e border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
             <flux:sidebar.header>
                 <x-app-logo :sidebar="true" href="{{ route('dashboard') }}" wire:navigate />
@@ -65,6 +65,17 @@
                         {{ __('View') }}
                     </flux:sidebar.item>
                     <flux:sidebar.item icon="plus" :href="route('admin.blacklist.create')" :current="request()->routeIs('dashboard')" wire:navigate>
+                        {{ __('Add') }}
+                    </flux:sidebar.item>
+                </flux:sidebar.group>
+            </flux:sidebar.nav>
+
+            <flux:sidebar.nav>
+                <flux:sidebar.group :heading="__('Menus')" class="grid">
+                    <flux:sidebar.item icon="plus" :href="route('admin.menus.index')" :current="request()->routeIs('dashboard')" wire:navigate>
+                        {{ __('View') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="plus" :href="route('admin.menus.create')" :current="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Add') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>

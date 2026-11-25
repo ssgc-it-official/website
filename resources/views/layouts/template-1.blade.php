@@ -71,7 +71,7 @@
             <div class="col-lg-12">
                 <div class="header-mid-one-wrapper wrapper-two">
                     <div class="logo-area shape-none">
-                        <a href="index.html">
+                        <a href="{{ route('home') }}">
                             <img src="{{ asset('assets/images/logo/02.svg') }}" alt="logo">
                         </a>
                     </div>

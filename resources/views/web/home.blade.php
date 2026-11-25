@@ -129,7 +129,7 @@
                     <div class="col-lg-12">
                         <div class="header-mid-one-wrapper wrapper-two">
                             <div class="logo-area">
-                                <a href="index.html">
+                                <a href="{{ route('home') }}">
                                     <img src="assets/images/logo/02-main.svg" alt="logo">
                                 </a>
                             </div>
@@ -560,7 +560,7 @@
                         <div class="single-footer-inner logo-area">
                             <div class="body one">
                                 <div class="logo mb--25">
-                                    <a href="index.html">
+                                    <a href="{{ route('home') }}">
                                         <img src="assets/images/logo/02-main.svg" alt="">
                                     </a>
                                 </div>
@@ -842,10 +842,10 @@
         <!-- inner menu area desktop start -->
         <div class="inner-main-wrapper-desk style-one-sidebar d-none d-lg-block">
             <div class="header-area-wrapper">
-                <a href="index.html" class="logo">
+                <a href="{{ route('home') }}" class="logo">
                     <img src="assets/images/logo/02.svg" alt="logo">
                 </a>
-                <a href="index.html" class="logo logo-yellow">
+                <a href="{{ route('home') }}" class="logo logo-yellow">
                     <img src="assets/images/logo/01.svg" alt="logo">
                 </a>
                 <button class="close-icon-menu" aria-label="close"><i class="far fa-times"></i></button>

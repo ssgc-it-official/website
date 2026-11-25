@@ -64,6 +64,7 @@ use App\Livewire\Web\RlngContract;
 use App\Livewire\Web\RlngProvisionalPrice;
 use App\Livewire\Web\SafetyEducation;
 use App\Livewire\Web\ScrutinizerReport2025;
+use App\Livewire\Web\ScrutinizerReportForAgm2022;
 use App\Livewire\Web\SecpCompliance;
 use App\Livewire\Web\SeniorGeneralManagers;
 use App\Livewire\Web\StatementOfCorporateIntent;
@@ -145,6 +146,7 @@ Route::get('dividend-mandate-form', DividendMandateForm::class);
 Route::get('important-ciriculars', ImportantCirculars::class)->name('important-ciriculars');
 Route::get('investor-relation', InvestorRelation::class)->name('investor-relation');
 Route::get('conversion-of-physical-shares', ConversionOfPhysicalShares::class);
+Route::get('scrutinizer-report-for-agm-2022', ScrutinizerReportForAgm2022::class);
 
 // Tenders
 Route::get('tenders', Tenders::class)->name('tenders');
@@ -194,4 +196,9 @@ Route::name('admin.')
         Route::livewire('blacklisted-firms', 'pages::admin.blacklist.index')->name('blacklist.index');
         Route::livewire('blacklisted-firms/create', 'pages::admin.blacklist.create')->name('blacklist.create');
         Route::livewire('blacklisted-firms/{blacklistedFirm}/edit', 'pages::admin.blacklist.edit')->name('blacklist.edit');
+
+        // Menus
+        Route::livewire('menus', 'pages::admin.menus.index')->name('menus.index');
+        Route::livewire('menus/create', 'pages::admin.menus.create')->name('menus.create');
+        Route::livewire('menus/{menu}/edit', 'pages::admin.menus.edit')->name('menus.edit');
     });

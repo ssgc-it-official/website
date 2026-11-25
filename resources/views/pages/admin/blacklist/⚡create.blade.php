@@ -51,8 +51,8 @@ class extends Component {
 ?>
 
 <div>
-    <h4 class="mt-4">Blacklisted Firms</h4>
-    <h5 class="mt-4 text-xl">Add New Blacklisted Firm</h5>
+    <h4 class="mt-4 text-gray-600">Blacklisted Firms</h4>
+    <h5 class="mt-4 text-xl text-gray-600">Add New Blacklisted Firm</h5>
 
     <!-- Session Status -->
     <x-auth-session-status class="text-center" :status="session('status')"/>

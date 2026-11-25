@@ -22,10 +22,10 @@ class extends Component {
 ?>
 
 <div>
-    <h4 class="mt-4">General Managers</h4>
-    <h5 class="mt-4 text-xl">List of General Managers</h5>
+    <h4 class="mt-4 text-gray-600">General Managers</h4>
+    <h5 class="mt-4 text-xl text-gray-600">List of General Managers</h5>
 
-    <table class="table-auto mt-5 w-5xl">
+    <table class="table-auto mt-5 w-5xl text-gray-600">
         <thead>
         <tr>
             <th>Name</th>

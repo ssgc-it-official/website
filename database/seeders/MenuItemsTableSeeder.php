@@ -121,22 +121,22 @@ class MenuItemsTableSeeder extends Seeder
             array (
                 'id' => 8,
                 'parent_id' => 1,
-            'title' => 'The State-Owned Enterprises (C-Level Appointments) Guidelines 2024',
-                'url' => 'state-owned-enterprises',
+            'title' => 'State-Owned Enterprises (C-Level Appointments) Guidelines 2024',
+                'url' => '/state-owned-enterprises',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
                 'type' => 'S',
                 'is_active' => 1,
                 'created_at' => '2026-10-24 09:21:47',
-                'updated_at' => '2026-10-24 09:21:47',
+                'updated_at' => '2026-11-25 15:01:04',
             ),
             8 => 
             array (
                 'id' => 9,
                 'parent_id' => 1,
                 'title' => 'Profile',
-                'url' => 'profile',
+                'url' => '/profile',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -150,7 +150,7 @@ class MenuItemsTableSeeder extends Seeder
                 'id' => 10,
                 'parent_id' => 1,
                 'title' => 'Vison',
-                'url' => 'vision',
+                'url' => '/vision',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -164,7 +164,7 @@ class MenuItemsTableSeeder extends Seeder
                 'id' => 11,
                 'parent_id' => 1,
                 'title' => 'Mission',
-                'url' => 'mission',
+                'url' => '/mission',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -178,7 +178,7 @@ class MenuItemsTableSeeder extends Seeder
                 'id' => 12,
                 'parent_id' => 1,
                 'title' => 'Core Values',
-                'url' => 'core-values',
+                'url' => '/core-values',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -192,7 +192,7 @@ class MenuItemsTableSeeder extends Seeder
                 'id' => 13,
                 'parent_id' => 1,
                 'title' => 'Meter Manufacturing Plant',
-                'url' => 'meter-plant',
+                'url' => '/meter-plant',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -203,24 +203,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             13 => 
             array (
-                'id' => 14,
-                'parent_id' => 1,
-                'title' => 'Board of Directors & Management',
-                'url' => '#',
-                'target' => '_self',
-                'icon' => NULL,
-                'order' => 0,
-                'type' => 'S',
-                'is_active' => 0,
-                'created_at' => '2026-10-24 09:23:26',
-                'updated_at' => '2026-10-24 09:23:26',
-            ),
-            14 => 
-            array (
                 'id' => 15,
                 'parent_id' => 1,
                 'title' => 'Board of Directors',
-                'url' => 'board-of-directors',
+                'url' => '/board-of-directors',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -229,12 +215,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:23:46',
                 'updated_at' => '2026-10-24 09:23:46',
             ),
-            15 => 
+            14 => 
             array (
                 'id' => 16,
                 'parent_id' => 1,
                 'title' => 'Chairman, M.D., and DMD',
-                'url' => 'chairman-md-dmd',
+                'url' => '/chairman-md-dmd',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -243,7 +229,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:31:16',
                 'updated_at' => '2026-10-24 09:31:16',
             ),
-            16 => 
+            15 => 
             array (
                 'id' => 17,
                 'parent_id' => 1,
@@ -257,12 +243,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:32:11',
                 'updated_at' => '2026-10-24 09:32:11',
             ),
-            17 => 
+            16 => 
             array (
                 'id' => 18,
                 'parent_id' => 1,
                 'title' => 'General Managers',
-                'url' => 'general-managers',
+                'url' => '/general-managers',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -271,12 +257,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:32:24',
                 'updated_at' => '2026-10-24 09:32:24',
             ),
-            18 => 
+            17 => 
             array (
                 'id' => 19,
                 'parent_id' => 2,
                 'title' => 'Ten Years At a Glance',
-                'url' => 'ten-years-at-a-glance',
+                'url' => '/ten-years-at-a-glance',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -285,12 +271,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:33:05',
                 'updated_at' => '2026-10-24 09:33:05',
             ),
-            19 => 
+            18 => 
             array (
                 'id' => 20,
                 'parent_id' => 2,
                 'title' => 'Financial Reports',
-                'url' => 'financial-reports',
+                'url' => '/financial-reports',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -299,12 +285,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:33:18',
                 'updated_at' => '2026-10-24 09:33:18',
             ),
-            20 => 
+            19 => 
             array (
                 'id' => 21,
                 'parent_id' => 2,
                 'title' => 'Annual Progress on Business Plan FY 2024-2027',
-                'url' => 'annual-progress-on-business-plan',
+                'url' => '/annual-progress-on-business-plan',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -313,12 +299,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:33:43',
                 'updated_at' => '2026-10-24 09:33:43',
             ),
-            21 => 
+            20 => 
             array (
                 'id' => 22,
                 'parent_id' => 2,
                 'title' => 'SECP Compliance Certificate',
-                'url' => 'secp-compliance',
+                'url' => '/secp-compliance',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -327,7 +313,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:33:58',
                 'updated_at' => '2026-10-24 09:33:58',
             ),
-            22 => 
+            21 => 
             array (
                 'id' => 23,
                 'parent_id' => 3,
@@ -341,7 +327,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:34:23',
                 'updated_at' => '2026-10-24 09:34:23',
             ),
-            23 => 
+            22 => 
             array (
                 'id' => 24,
                 'parent_id' => 3,
@@ -355,12 +341,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 09:34:33',
                 'updated_at' => '2026-10-24 09:34:33',
             ),
-            24 => 
+            23 => 
             array (
                 'id' => 25,
                 'parent_id' => 1,
                 'title' => 'Gender Pay Gap',
-                'url' => 'gender-pay-gap',
+                'url' => '/gender-pay-gap',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -369,12 +355,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:45:43',
                 'updated_at' => '2026-10-24 13:45:43',
             ),
-            25 => 
+            24 => 
             array (
                 'id' => 26,
                 'parent_id' => 1,
                 'title' => 'Company Offices',
-                'url' => 'company-offices',
+                'url' => '/company-offices',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -383,12 +369,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:46:04',
                 'updated_at' => '2026-10-24 13:46:04',
             ),
-            26 => 
+            25 => 
             array (
                 'id' => 27,
                 'parent_id' => 1,
                 'title' => 'Business Principles and Ethics Policy',
-                'url' => 'business-policy',
+                'url' => '/business-policy',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -397,12 +383,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:46:15',
                 'updated_at' => '2026-10-24 13:46:15',
             ),
-            27 => 
+            26 => 
             array (
                 'id' => 28,
                 'parent_id' => 1,
                 'title' => 'Health, Safety, Environment, and Quality Assurance Policy',
-                'url' => 'hse-policy',
+                'url' => '/hse-policy',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -411,12 +397,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:46:43',
                 'updated_at' => '2026-10-24 13:46:43',
             ),
-            28 => 
+            27 => 
             array (
                 'id' => 29,
                 'parent_id' => 1,
                 'title' => 'HSE Integrated Management System Handbook',
-                'url' => 'hse-handbook',
+                'url' => '/hse-handbook',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -425,12 +411,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:47:26',
                 'updated_at' => '2026-10-24 13:47:26',
             ),
-            29 => 
+            28 => 
             array (
                 'id' => 30,
                 'parent_id' => 1,
                 'title' => 'Pakistan Gas Network Code',
-                'url' => 'pakistan-gas-network-code',
+                'url' => '/pakistan-gas-network-code',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -439,12 +425,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-20 16:53:12',
                 'updated_at' => '2026-11-20 16:53:12',
             ),
-            30 => 
+            29 => 
             array (
                 'id' => 31,
                 'parent_id' => 1,
                 'title' => 'Pakistan Gas Network Code – Amendment',
-                'url' => 'pakistan-gas-network-code-amend',
+                'url' => '/pakistan-gas-network-code-amend',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -453,12 +439,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-20 16:54:18',
                 'updated_at' => '2026-11-20 16:54:18',
             ),
-            31 => 
+            30 => 
             array (
                 'id' => 32,
                 'parent_id' => 1,
                 'title' => 'License for Transmission, Distribution, and Sale of Natural Gas',
-                'url' => 'license-for-transmission',
+                'url' => '/license-for-transmission',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -467,12 +453,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-20 16:54:38',
                 'updated_at' => '2026-11-20 16:54:38',
             ),
-            32 => 
+            31 => 
             array (
                 'id' => 33,
                 'parent_id' => 1,
                 'title' => 'Capacity Information – Gas Transmission',
-                'url' => 'capacity-info-transmission',
+                'url' => '/capacity-info-transmission',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -481,12 +467,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-20 16:55:05',
                 'updated_at' => '2026-11-20 16:55:05',
             ),
-            33 => 
+            32 => 
             array (
                 'id' => 34,
                 'parent_id' => 1,
                 'title' => 'Capacity Information – Distribution Sindh',
-                'url' => 'capacity-info-sindh',
+                'url' => '/capacity-info-sindh',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -495,12 +481,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-20 16:55:33',
                 'updated_at' => '2026-11-20 16:55:33',
             ),
-            34 => 
+            33 => 
             array (
                 'id' => 35,
                 'parent_id' => 1,
                 'title' => 'Capacity Information – Distribution Karachi',
-                'url' => 'capacity-info-karachi',
+                'url' => '/capacity-info-karachi',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -509,12 +495,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-20 16:55:48',
                 'updated_at' => '2026-11-20 16:55:48',
             ),
-            35 => 
+            34 => 
             array (
                 'id' => 36,
                 'parent_id' => 1,
                 'title' => 'Capacity Information – Distribution Balochistan',
-                'url' => 'capacity-info-balochistan',
+                'url' => '/capacity-info-balochistan',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -523,12 +509,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-20 16:56:03',
                 'updated_at' => '2026-11-20 16:56:03',
             ),
-            36 => 
+            35 => 
             array (
                 'id' => 37,
                 'parent_id' => 1,
                 'title' => 'List of Focal Persons',
-                'url' => 'list-of-focal-persons',
+                'url' => '/list-of-focal-persons',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -537,12 +523,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:51:50',
                 'updated_at' => '2026-10-24 13:51:50',
             ),
-            37 => 
+            36 => 
             array (
                 'id' => 38,
                 'parent_id' => 1,
                 'title' => 'Complaint Types and Estimated Resolution Timelines',
-                'url' => 'complaint-types',
+                'url' => '/complaint-types',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -551,12 +537,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:53:19',
                 'updated_at' => '2026-10-24 13:53:19',
             ),
-            38 => 
+            37 => 
             array (
                 'id' => 39,
                 'parent_id' => 1,
                 'title' => 'Bill Payment Options',
-                'url' => 'bill-payment-options',
+                'url' => '/bill-payment-options',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -565,12 +551,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:53:59',
                 'updated_at' => '2026-10-24 13:53:59',
             ),
-            39 => 
+            38 => 
             array (
                 'id' => 40,
                 'parent_id' => 1,
                 'title' => 'Bill Advertisements',
-                'url' => 'bill-advertisements',
+                'url' => '/bill-advertisements',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -579,7 +565,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:54:12',
                 'updated_at' => '2026-10-24 13:54:12',
             ),
-            40 => 
+            39 => 
             array (
                 'id' => 41,
                 'parent_id' => 1,
@@ -593,12 +579,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:54:36',
                 'updated_at' => '2026-10-24 13:54:36',
             ),
-            41 => 
+            40 => 
             array (
                 'id' => 42,
                 'parent_id' => 1,
                 'title' => 'Environmental Impact Assessment RLNG-II',
-                'url' => 'environmental-impact-assessment',
+                'url' => '/environmental-impact-assessment',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -607,12 +593,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:55:04',
                 'updated_at' => '2026-10-24 13:55:04',
             ),
-            42 => 
+            41 => 
             array (
                 'id' => 43,
                 'parent_id' => 1,
                 'title' => 'SSGC Whistle Blowing Mechanism',
-                'url' => 'whistle-blowing-mechanism',
+                'url' => '/whistle-blowing-mechanism',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -621,7 +607,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:55:20',
                 'updated_at' => '2026-10-24 13:55:20',
             ),
-            43 => 
+            42 => 
             array (
                 'id' => 44,
                 'parent_id' => 3,
@@ -635,7 +621,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:56:31',
                 'updated_at' => '2026-10-24 13:56:31',
             ),
-            44 => 
+            43 => 
             array (
                 'id' => 45,
                 'parent_id' => 3,
@@ -649,12 +635,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:56:41',
                 'updated_at' => '2026-10-24 13:56:41',
             ),
-            45 => 
+            44 => 
             array (
                 'id' => 46,
                 'parent_id' => 3,
                 'title' => 'Process of Gas Connection',
-                'url' => 'process-of-gas-connection',
+                'url' => '/process-of-gas-connection',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -663,12 +649,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:57:16',
                 'updated_at' => '2026-10-24 13:57:16',
             ),
-            46 => 
+            45 => 
             array (
                 'id' => 47,
                 'parent_id' => 3,
                 'title' => 'LPG Air Mix',
-                'url' => 'lpg-air-mix',
+                'url' => '/lpg-air-mix',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -677,12 +663,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:57:48',
                 'updated_at' => '2026-10-24 13:57:48',
             ),
-            47 => 
+            46 => 
             array (
                 'id' => 48,
                 'parent_id' => 3,
                 'title' => 'RLNG Provisional Price',
-                'url' => 'rlng-provisional-price',
+                'url' => '/rlng-provisional-price',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -691,7 +677,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:59:12',
                 'updated_at' => '2026-10-24 13:59:12',
             ),
-            48 => 
+            47 => 
             array (
                 'id' => 49,
                 'parent_id' => 3,
@@ -705,12 +691,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:59:20',
                 'updated_at' => '2026-10-24 13:59:20',
             ),
-            49 => 
+            48 => 
             array (
                 'id' => 50,
                 'parent_id' => 3,
                 'title' => 'Consumer Service Manual',
-                'url' => 'consumer-service-manual',
+                'url' => '/consumer-service-manual',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -719,12 +705,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 13:59:42',
                 'updated_at' => '2026-10-24 13:59:42',
             ),
-            50 => 
+            49 => 
             array (
                 'id' => 51,
                 'parent_id' => 3,
                 'title' => 'Domestic Bill Calculator',
-                'url' => 'domestic-bill-calculator',
+                'url' => '/domestic-bill-calculator',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -733,12 +719,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:00:05',
                 'updated_at' => '2026-10-24 14:00:05',
             ),
-            51 => 
+            50 => 
             array (
                 'id' => 52,
                 'parent_id' => 3,
             'title' => 'Frequently Asked Questions (FAQs)',
-                'url' => 'frequently-asked-questions',
+                'url' => '/frequently-asked-questions',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -747,7 +733,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:00:27',
                 'updated_at' => '2026-10-24 14:00:27',
             ),
-            52 => 
+            51 => 
             array (
                 'id' => 53,
                 'parent_id' => 4,
@@ -761,7 +747,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:01:23',
                 'updated_at' => '2026-10-24 14:01:23',
             ),
-            53 => 
+            52 => 
             array (
                 'id' => 54,
                 'parent_id' => 4,
@@ -775,7 +761,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:01:46',
                 'updated_at' => '2026-10-24 14:01:46',
             ),
-            54 => 
+            53 => 
             array (
                 'id' => 55,
                 'parent_id' => 4,
@@ -789,7 +775,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:02:05',
                 'updated_at' => '2026-10-24 14:02:20',
             ),
-            55 => 
+            54 => 
             array (
                 'id' => 56,
                 'parent_id' => 4,
@@ -803,7 +789,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:02:54',
                 'updated_at' => '2026-10-24 14:02:54',
             ),
-            56 => 
+            55 => 
             array (
                 'id' => 57,
                 'parent_id' => 4,
@@ -817,12 +803,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:03:19',
                 'updated_at' => '2026-10-24 14:03:19',
             ),
-            57 => 
+            56 => 
             array (
                 'id' => 58,
                 'parent_id' => 4,
                 'title' => 'Consent for Electronic Transmission of Annual Audited Financial Statements',
-                'url' => '#',
+                'url' => '/consent-for-electronic-transmission',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -831,12 +817,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:04:05',
                 'updated_at' => '2026-10-24 14:04:05',
             ),
-            58 => 
+            57 => 
             array (
                 'id' => 59,
                 'parent_id' => 4,
                 'title' => 'Contact for Investment Assistance / Grievances',
-                'url' => '#',
+                'url' => '/contact-for-investment-assistance',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -845,12 +831,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:04:25',
                 'updated_at' => '2026-10-24 14:04:25',
             ),
-            59 => 
+            58 => 
             array (
                 'id' => 60,
                 'parent_id' => 4,
                 'title' => 'Credit Rating',
-                'url' => '#',
+                'url' => 'https://www.pacra.com/rating_resources',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -859,12 +845,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:04:49',
                 'updated_at' => '2026-10-24 14:04:49',
             ),
-            60 => 
+            59 => 
             array (
                 'id' => 61,
                 'parent_id' => 4,
                 'title' => 'Dividend Mandate Form',
-                'url' => '#',
+                'url' => '/dividend-mandate-form',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -873,12 +859,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:05:07',
                 'updated_at' => '2026-10-24 14:05:07',
             ),
-            61 => 
+            60 => 
             array (
                 'id' => 62,
                 'parent_id' => 4,
                 'title' => 'Financial Reports',
-                'url' => '#',
+                'url' => '/financial-reports',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -887,12 +873,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:05:46',
                 'updated_at' => '2026-10-24 14:05:46',
             ),
-            62 => 
+            61 => 
             array (
                 'id' => 63,
                 'parent_id' => 4,
                 'title' => 'Important Circulars / Notifications',
-                'url' => '#',
+                'url' => '/important-ciriculars',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -901,12 +887,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:06:01',
                 'updated_at' => '2026-10-24 14:06:01',
             ),
-            63 => 
+            62 => 
             array (
                 'id' => 64,
                 'parent_id' => 4,
                 'title' => 'Investors Relation',
-                'url' => '#',
+                'url' => '/investor-relation',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -915,12 +901,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:06:18',
                 'updated_at' => '2026-10-24 14:06:18',
             ),
-            64 => 
+            63 => 
             array (
                 'id' => 65,
                 'parent_id' => 4,
                 'title' => 'Conversion of Physical Shares of SSGCL into Book-Entry Form',
-                'url' => '#',
+                'url' => '/conversion-of-physical-shares',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -929,12 +915,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:06:37',
                 'updated_at' => '2026-10-24 14:06:37',
             ),
-            65 => 
+            64 => 
             array (
                 'id' => 66,
                 'parent_id' => 5,
                 'title' => 'Active Tenders',
-                'url' => 'tenders',
+                'url' => '/tenders',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -943,12 +929,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:07:59',
                 'updated_at' => '2026-10-24 14:07:59',
             ),
-            66 => 
+            65 => 
             array (
                 'id' => 67,
                 'parent_id' => 5,
                 'title' => 'Three Quotation Tenders',
-                'url' => 'three-quotation-tenders',
+                'url' => '/three-quotation-tenders',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -957,7 +943,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:08:25',
                 'updated_at' => '2026-10-24 14:08:25',
             ),
-            67 => 
+            66 => 
             array (
                 'id' => 68,
                 'parent_id' => 5,
@@ -967,16 +953,16 @@ class MenuItemsTableSeeder extends Seeder
                 'icon' => NULL,
                 'order' => 0,
                 'type' => 'S',
-                'is_active' => 1,
+                'is_active' => 0,
                 'created_at' => '2026-10-24 14:08:42',
                 'updated_at' => '2026-10-24 14:08:42',
             ),
-            68 => 
+            67 => 
             array (
                 'id' => 69,
                 'parent_id' => 5,
                 'title' => 'Tender Evaluations',
-                'url' => '#',
+                'url' => 'https://viewbill.ssgc.com.pk/web/tevals_view.php',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -985,12 +971,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:08:56',
                 'updated_at' => '2026-10-24 14:08:56',
             ),
-            69 => 
+            68 => 
             array (
                 'id' => 70,
                 'parent_id' => 5,
                 'title' => 'Blacklisted Firms',
-                'url' => '#',
+                'url' => '/blacklisted-firms',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -999,12 +985,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:09:06',
                 'updated_at' => '2026-10-24 14:09:06',
             ),
-            70 => 
+            69 => 
             array (
                 'id' => 71,
                 'parent_id' => 5,
                 'title' => 'Blacklisting Mechanism',
-                'url' => '#',
+                'url' => '/blacklisting-mechanism',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1013,12 +999,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:09:26',
                 'updated_at' => '2026-10-24 14:09:26',
             ),
-            71 => 
+            70 => 
             array (
                 'id' => 72,
                 'parent_id' => 5,
                 'title' => 'Annual Procurement Plan 2026-27',
-                'url' => '#',
+                'url' => '/annual-procurement-plan',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1027,7 +1013,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:09:37',
                 'updated_at' => '2026-10-24 14:09:37',
             ),
-            72 => 
+            71 => 
             array (
                 'id' => 73,
                 'parent_id' => 6,
@@ -1041,7 +1027,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:09:55',
                 'updated_at' => '2026-10-24 14:09:55',
             ),
-            73 => 
+            72 => 
             array (
                 'id' => 74,
                 'parent_id' => 6,
@@ -1055,7 +1041,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:10:14',
                 'updated_at' => '2026-10-24 14:10:14',
             ),
-            74 => 
+            73 => 
             array (
                 'id' => 75,
                 'parent_id' => 6,
@@ -1069,7 +1055,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:10:28',
                 'updated_at' => '2026-10-24 14:10:28',
             ),
-            75 => 
+            74 => 
             array (
                 'id' => 76,
                 'parent_id' => 6,
@@ -1083,7 +1069,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:10:57',
                 'updated_at' => '2026-10-24 14:10:57',
             ),
-            76 => 
+            75 => 
             array (
                 'id' => 77,
                 'parent_id' => 6,
@@ -1097,7 +1083,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:11:04',
                 'updated_at' => '2026-10-24 14:11:04',
             ),
-            77 => 
+            76 => 
             array (
                 'id' => 78,
                 'parent_id' => 6,
@@ -1111,7 +1097,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:11:11',
                 'updated_at' => '2026-10-24 14:11:11',
             ),
-            78 => 
+            77 => 
             array (
                 'id' => 79,
                 'parent_id' => 6,
@@ -1125,12 +1111,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:11:35',
                 'updated_at' => '2026-10-24 14:11:35',
             ),
-            79 => 
+            78 => 
             array (
                 'id' => 80,
                 'parent_id' => 7,
                 'title' => 'How Customers Can Complain',
-                'url' => 'how-customers-complain',
+                'url' => '/how-customers-complain',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1139,12 +1125,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:12:02',
                 'updated_at' => '2026-10-24 14:12:02',
             ),
-            80 => 
+            79 => 
             array (
                 'id' => 81,
                 'parent_id' => 7,
                 'title' => 'Complaint Types and Estimated Resolution Timelines',
-                'url' => 'complaint-types',
+                'url' => '/complaint-types',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1153,12 +1139,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:12:17',
                 'updated_at' => '2026-10-24 14:12:17',
             ),
-            81 => 
+            80 => 
             array (
                 'id' => 82,
                 'parent_id' => 7,
                 'title' => 'Federal Ombudsman Numbers',
-                'url' => 'federal-ombudsman-numbers',
+                'url' => '/federal-ombudsman-numbers',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1167,12 +1153,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:12:33',
                 'updated_at' => '2026-10-24 14:12:33',
             ),
-            82 => 
+            81 => 
             array (
                 'id' => 83,
                 'parent_id' => 7,
                 'title' => 'Public Complaints Resolution Mechanism',
-                'url' => 'public-complaints-resolution',
+                'url' => '/public-complaints-resolution',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1181,12 +1167,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:13:08',
                 'updated_at' => '2026-10-24 14:13:08',
             ),
-            83 => 
+            82 => 
             array (
                 'id' => 84,
                 'parent_id' => 7,
                 'title' => 'Complaints / Feedback',
-                'url' => 'complaints',
+                'url' => '/complaints',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1195,12 +1181,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:13:31',
                 'updated_at' => '2026-10-24 14:13:31',
             ),
-            84 => 
+            83 => 
             array (
                 'id' => 85,
                 'parent_id' => 7,
                 'title' => 'Important Numbers',
-                'url' => 'important-numbers',
+                'url' => '/important-numbers',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1209,12 +1195,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:13:51',
                 'updated_at' => '2026-10-24 14:13:51',
             ),
-            85 => 
+            84 => 
             array (
                 'id' => 86,
                 'parent_id' => 7,
                 'title' => 'Customer Facilitation Centers',
-                'url' => 'customer-facilitation-centers',
+                'url' => '/customer-facilitation-centers',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1223,12 +1209,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:14:08',
                 'updated_at' => '2026-10-24 14:14:08',
             ),
-            86 => 
+            85 => 
             array (
                 'id' => 87,
                 'parent_id' => 7,
                 'title' => 'Check Gas Line for Leakages',
-                'url' => 'check-for-leakages',
+                'url' => '/check-for-leakages',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1237,12 +1223,12 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:14:22',
                 'updated_at' => '2026-10-24 14:14:22',
             ),
-            87 => 
+            86 => 
             array (
                 'id' => 88,
                 'parent_id' => 7,
                 'title' => 'Safety Education',
-                'url' => 'safety-education',
+                'url' => '/safety-education',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1251,7 +1237,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:14:44',
                 'updated_at' => '2026-10-24 14:14:44',
             ),
-            88 => 
+            87 => 
             array (
                 'id' => 89,
                 'parent_id' => 1,
@@ -1265,12 +1251,26 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-10-24 14:14:53',
                 'updated_at' => '2026-10-24 14:14:53',
             ),
-            89 => 
+            88 => 
             array (
                 'id' => 90,
                 'parent_id' => 24,
                 'title' => 'Domestic Rates',
-                'url' => 'domestic-rates',
+                'url' => '/domestic-rates',
+                'target' => '_self',
+                'icon' => NULL,
+                'order' => 0,
+                'type' => 'S',
+                'is_active' => 1,
+                'created_at' => '2026-11-22 11:52:39',
+                'updated_at' => '2026-11-22 11:52:39',
+            ),
+            89 => 
+            array (
+                'id' => 91,
+                'parent_id' => 24,
+                'title' => 'Domestic Connection Form',
+                'url' => '/domestic-connection-form',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1281,10 +1281,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             90 => 
             array (
-                'id' => 91,
-                'parent_id' => 24,
-                'title' => 'Domestic Connection Form',
-                'url' => 'domestic-connection-form',
+                'id' => 92,
+                'parent_id' => 44,
+                'title' => 'Commercial Rates',
+                'url' => '/commercial-rates',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1295,10 +1295,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             91 => 
             array (
-                'id' => 92,
+                'id' => 93,
                 'parent_id' => 44,
-                'title' => 'Commercial Rates',
-                'url' => 'commercial-rates',
+                'title' => 'Commercial Connection Form',
+                'url' => '/commercial-connection-form',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1309,10 +1309,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             92 => 
             array (
-                'id' => 93,
+                'id' => 94,
                 'parent_id' => 44,
-                'title' => 'Commercial Connection Form',
-                'url' => 'commercial-connection-form',
+                'title' => 'Commercial Connection Contract',
+                'url' => '/commercial-connection-contract',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1323,10 +1323,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             93 => 
             array (
-                'id' => 94,
-                'parent_id' => 44,
-                'title' => 'Commercial Connection Contract',
-                'url' => 'commercial-connection-contract',
+                'id' => 95,
+                'parent_id' => 45,
+                'title' => 'Industrial Rates',
+                'url' => '/industrial-rates',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1337,10 +1337,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             94 => 
             array (
-                'id' => 95,
+                'id' => 96,
                 'parent_id' => 45,
-                'title' => 'Industrial Rates',
-                'url' => 'industrial-rates',
+                'title' => 'Industrial Connection Form',
+                'url' => '/industrial-connection-form',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1351,10 +1351,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             95 => 
             array (
-                'id' => 96,
+                'id' => 97,
                 'parent_id' => 45,
-                'title' => 'Industrial Connection Form',
-                'url' => 'industrial-connection-form',
+                'title' => 'Industrial Connection Contract',
+                'url' => '/industrial-connection-contract',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1365,10 +1365,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             96 => 
             array (
-                'id' => 97,
+                'id' => 98,
                 'parent_id' => 45,
-                'title' => 'Industrial Connection Contract',
-                'url' => 'industrial-connection-contract',
+                'title' => 'RLNG Contract - Industrial',
+                'url' => '/rlng-contract',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1379,10 +1379,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             97 => 
             array (
-                'id' => 98,
-                'parent_id' => 45,
-                'title' => 'RLNG Contract - Industrial',
-                'url' => 'rlng-contract',
+                'id' => 99,
+                'parent_id' => 54,
+                'title' => 'Scrutinizer Report 2025',
+                'url' => '/scrutinizer-report-2025',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1393,10 +1393,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             98 => 
             array (
-                'id' => 99,
-                'parent_id' => 54,
-                'title' => 'Scrutinizer Report 2025',
-                'url' => 'scrutinizer-report-2025',
+                'id' => 100,
+                'parent_id' => 55,
+                'title' => 'Statement of Corporate Intent',
+                'url' => '/statement-of-corporate-intent',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1407,10 +1407,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             99 => 
             array (
-                'id' => 100,
-                'parent_id' => 55,
-                'title' => 'Statement of Corporate Intent',
-                'url' => 'statement-of-corporate-intent',
+                'id' => 101,
+                'parent_id' => 56,
+                'title' => 'Notice of the 71st Annual General Meeting',
+                'url' => '/notice-of-71st-agm',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1421,10 +1421,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             100 => 
             array (
-                'id' => 101,
+                'id' => 102,
                 'parent_id' => 56,
-                'title' => 'Notice of the 71st Annual General Meeting',
-                'url' => '#',
+            'title' => 'Form of Proxy (71st AGM)',
+                'url' => '/form-of-proxy-71st-agm',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1435,10 +1435,10 @@ class MenuItemsTableSeeder extends Seeder
             ),
             101 => 
             array (
-                'id' => 102,
+                'id' => 103,
                 'parent_id' => 56,
-            'title' => 'Form of Proxy (71st AGM)',
-                'url' => '#',
+                'title' => 'Draft Minutes of the 71st Annual General Meeting',
+                'url' => '/draft-minutes-71st-agm',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,
@@ -1448,20 +1448,6 @@ class MenuItemsTableSeeder extends Seeder
                 'updated_at' => '2026-11-22 11:52:39',
             ),
             102 => 
-            array (
-                'id' => 103,
-                'parent_id' => 56,
-                'title' => 'Draft Minutes of the 71st Annual General Meeting',
-                'url' => '#',
-                'target' => '_self',
-                'icon' => NULL,
-                'order' => 0,
-                'type' => 'S',
-                'is_active' => 1,
-                'created_at' => '2026-11-22 11:52:39',
-                'updated_at' => '2026-11-22 11:52:39',
-            ),
-            103 => 
             array (
                 'id' => 104,
                 'parent_id' => 57,
@@ -1475,7 +1461,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-22 11:52:39',
                 'updated_at' => '2026-11-22 11:52:39',
             ),
-            104 => 
+            103 => 
             array (
                 'id' => 105,
                 'parent_id' => 57,
@@ -1489,7 +1475,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-22 11:52:39',
                 'updated_at' => '2026-11-22 11:52:39',
             ),
-            105 => 
+            104 => 
             array (
                 'id' => 106,
                 'parent_id' => 57,
@@ -1503,7 +1489,7 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-22 11:52:39',
                 'updated_at' => '2026-11-22 11:52:39',
             ),
-            106 => 
+            105 => 
             array (
                 'id' => 107,
                 'parent_id' => 57,
@@ -1517,12 +1503,40 @@ class MenuItemsTableSeeder extends Seeder
                 'created_at' => '2026-11-22 11:52:39',
                 'updated_at' => '2026-11-22 11:52:39',
             ),
-            107 => 
+            106 => 
             array (
                 'id' => 108,
                 'parent_id' => 57,
             'title' => 'Corporate Briefing Session (Dec-2025)',
                 'url' => '#',
+                'target' => '_self',
+                'icon' => NULL,
+                'order' => 0,
+                'type' => 'S',
+                'is_active' => 1,
+                'created_at' => '2026-11-22 11:52:39',
+                'updated_at' => '2026-11-22 11:52:39',
+            ),
+            107 => 
+            array (
+                'id' => 109,
+                'parent_id' => 3,
+                'title' => 'New Connection',
+                'url' => '#',
+                'target' => '_self',
+                'icon' => NULL,
+                'order' => 0,
+                'type' => 'S',
+                'is_active' => 1,
+                'created_at' => '2026-11-22 11:52:39',
+                'updated_at' => '2026-11-25 15:04:56',
+            ),
+            108 => 
+            array (
+                'id' => 110,
+                'parent_id' => 4,
+                'title' => 'Scrutinizer Report for AGM 2022 held on 29 December 2023',
+                'url' => '/scrutinizer-report-for-agm-2022',
                 'target' => '_self',
                 'icon' => NULL,
                 'order' => 0,

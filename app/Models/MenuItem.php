@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use LaravelIdea\Helper\App\Models\_IH_MenuItem_C;
 
 class MenuItem extends Model
 {
@@ -41,7 +43,7 @@ class MenuItem extends Model
             ->orderBy('order', 'asc');
     }
 
-    public static function tree()
+    public static function tree(): array|Collection|_IH_MenuItem_C
     {
         return static::whereNull('parent_id')
             ->orderBy('order', 'asc')
