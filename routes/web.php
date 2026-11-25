@@ -98,9 +98,10 @@ Route::get('capacity-info-sindh', CapacityInfoSindh::class)->name('capacity-info
 Route::get('capacity-info-karachi', CapacityInfoKarachi::class)->name('capacity-info-karachi');
 Route::get('capacity-info-balochistan', CapacityInfoBalochistan::class)->name('capacity-info-balochistan');
 Route::get('list-of-focal-persons', FocalPersons::class)->name('list-of-focal-persons');
-Route::get('environmental-impact-assessment', EnvironmentalImpactAssessment::class)->name('environmental-impact-assessment');
+// Route::get('environmental-impact-assessment', EnvironmentalImpactAssessment::class)->name('environmental-impact-assessment');
+// Route::get('web/{slug}', EnvironmentalImpactAssessment::class);
+Route::livewire('document/{slug}', 'livewire.web.pdf-page')->name('documents.show');
 Route::get('whistle-blowing-mechanism', WhistleBlowingMechanism::class)->name('whistle-blowing-mechanism');
-
 // Financial
 Route::get('ten-years-at-a-glance', TenYears::class)->name('ten-years-at-glance');
 Route::get('financial-reports', FinancialReports::class)->name('financial-reports');

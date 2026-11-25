@@ -10,7 +10,7 @@ class DocumentSection extends Model implements HasMedia
 {
     use InteractsWithMedia;
 
-    protected $fillable = ['name', 'slug'];
+    protected $fillable = ['name', 'slug','heading','sub_heading','title'];
 
     // One PDF per section, stored in the `media` table.
     // Uploading a new PDF replaces the old one.
