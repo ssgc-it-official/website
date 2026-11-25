@@ -1,3 +1,6 @@
 <div>
-    {{-- Act only according to that maxim whereby you can, at the same time, will that it should become a universal law. - Immanuel Kant --}}
+    <x-breadcrumb title="Draft Minutes of the 71st Annual General Meeting"
+                  watermark="Draft Minutes of the 71st Annual General Meeting"/>
+
+    <x-pdf href="#" :title="$title"/>
 </div>

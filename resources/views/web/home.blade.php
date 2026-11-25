@@ -59,7 +59,7 @@
                                     <li class="single"><a target="_blank" href="https://www.instagram.com/"><i
                                                 class="fab fa-instagram"></i></a></li>
                                     <li class="single"><a target="_blank" href="https://dribbble.com/"><i
-                                                class="fal fa-globe"></i></a></li>
+                                                 class="fal fa-globe"></i></a></li>
                                 </ul>
 
                                 <div class="header-info ml--10">
