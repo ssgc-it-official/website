@@ -110,7 +110,6 @@ Route::get('capacity-info-balochistan', CapacityInfoBalochistan::class)->name('c
 Route::get('list-of-focal-persons', FocalPersons::class)->name('list-of-focal-persons');
 // Route::get('environmental-impact-assessment', EnvironmentalImpactAssessment::class)->name('environmental-impact-assessment');
 // Route::get('web/{slug}', EnvironmentalImpactAssessment::class);
-Route::livewire('document/{slug}', 'livewire.web.pdf-page')->name('documents.show');
 Route::get('whistle-blowing-mechanism', WhistleBlowingMechanism::class)->name('whistle-blowing-mechanism');
 // Financial
 Route::get('ten-years-at-a-glance', TenYears::class)->name('ten-years-at-glance');
@@ -204,13 +203,6 @@ Route::name('admin.')
         Route::livewire('menus/{menu}/edit', 'pages::admin.menus.edit')->name('menus.edit');
     });
 
-
-// urooj routes
-// Document Sections
-Route::livewire('document-sections', 'pages::document-sections.index')->name('document-sections.index');
-Route::livewire('document-sections/create', 'pages::document-sections.form')->name('document-sections.create');
-Route::livewire('document-sections/{documentSection}/edit', 'pages::document-sections.form')->name('document-sections.edit');
-
 Route::get('document-sections/{documentSection:slug}/file', function (\App\Models\DocumentSection $documentSection) {
     $media = $documentSection->getFirstMedia('pdf');
     abort_unless($media, 404);
@@ -222,3 +214,11 @@ Route::get('document-sections/{documentSection:slug}/download', function (\App\M
     abort_unless($media, 404);
     return $media;
 })->name('document-sections.download');
+
+// urooj routes
+Route::livewire('document/{slug}', 'livewire.web.pdf-page')->name('documents.show');
+// Document Sections
+Route::livewire('document-sections', 'pages::document-sections.index')->name('document-sections.index');
+Route::livewire('document-sections/create', 'pages::document-sections.form')->name('document-sections.create');
+Route::livewire('document-sections/{documentSection}/edit', 'pages::document-sections.form')->name('document-sections.edit');
+
