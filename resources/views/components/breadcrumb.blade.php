@@ -1,5 +1,7 @@
 @props(['title', 'watermark' => null])
 
+<!-- Breadcrumb Start -->
+<!-- tmp breadcrumba area start -->
 <div class="tmp-bread-crumb-area bg-breadcrumb bg_image">
     <div class="container">
         <div class="row">
@@ -22,3 +24,5 @@
         </div>
     </div>
 </div>
+<!-- tmp breadcrumba area end -->
+<!-- Breadcrumb End -->

@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Livewire\Web\AnnualProcurementPlan202627;
 use App\Livewire\Web\AnnualProgressOnBusinessPlan;
+use App\Livewire\Web\BlacklistedFirms;
+use App\Livewire\Web\BlacklistingMechanism;
 use App\Livewire\Web\BoardOfDirectors;
 use App\Livewire\Web\BusinessPolicy;
 use App\Livewire\Web\CapacityInfoBalochistan;
@@ -16,10 +19,14 @@ use App\Livewire\Web\CommercialRates;
 use App\Livewire\Web\CompanyOffices;
 use App\Livewire\Web\Complaints;
 use App\Livewire\Web\ComplaintTypes;
+use App\Livewire\Web\ConsentForElectronicTransmission;
 use App\Livewire\Web\ConsumerServiceManual;
+use App\Livewire\Web\ContactForInvestmentAssistance;
+use App\Livewire\Web\ConversionOfPhysicalShares;
 use App\Livewire\Web\CoreValues;
 use App\Livewire\Web\CustomerFacilitationCenters;
 use App\Livewire\Web\DirectorProfile;
+use App\Livewire\Web\DividendMandateForm;
 use App\Livewire\Web\DomesticBillCalculator;
 use App\Livewire\Web\DomesticConnectionForm;
 use App\Livewire\Web\DomesticRates;
@@ -36,10 +43,12 @@ use App\Livewire\Web\GeneralManagers;
 use App\Livewire\Web\HowCustomersComplain;
 use App\Livewire\Web\HseHandbook;
 use App\Livewire\Web\HsePolicy;
+use App\Livewire\Web\ImportantCirculars;
 use App\Livewire\Web\ImportantNumbers;
 use App\Livewire\Web\IndustrialConnectionContract;
 use App\Livewire\Web\IndustrialConnectionForm;
 use App\Livewire\Web\IndustrialRates;
+use App\Livewire\Web\InvestorRelation;
 use App\Livewire\Web\LicenseForTransmission;
 use App\Livewire\Web\LpgAirMix;
 use App\Livewire\Web\MeterPlant;
@@ -55,6 +64,7 @@ use App\Livewire\Web\RlngContract;
 use App\Livewire\Web\RlngProvisionalPrice;
 use App\Livewire\Web\SafetyEducation;
 use App\Livewire\Web\ScrutinizerReport2025;
+use App\Livewire\Web\ScrutinizerReportForAgm2022;
 use App\Livewire\Web\SecpCompliance;
 use App\Livewire\Web\SeniorGeneralManagers;
 use App\Livewire\Web\StatementOfCorporateIntent;
@@ -131,12 +141,22 @@ Route::get('statement-of-corporate-intent', StatementOfCorporateIntent::class)->
 Route::get('notice-of-71st-agm', NoticeOf71stAgm::class)->name('notice-of-71st-agm');
 Route::get('form-of-proxy-71st-agm', FormOfProxy71stAgm::class)->name('form-of-proxy-71st-agm');
 Route::get('draft-minutes-71st-agm', DraftMinutes71stAgm::class)->name('draft-minutes-71st-agm');
+Route::get('consent-for-electronic-transmission', ConsentForElectronicTransmission::class);
+Route::get('contact-for-investment-assistance', ContactForInvestmentAssistance::class);
+Route::get('dividend-mandate-form', DividendMandateForm::class);
+Route::get('important-ciriculars', ImportantCirculars::class)->name('important-ciriculars');
+Route::get('investor-relation', InvestorRelation::class)->name('investor-relation');
+Route::get('conversion-of-physical-shares', ConversionOfPhysicalShares::class);
+Route::get('scrutinizer-report-for-agm-2022', ScrutinizerReportForAgm2022::class);
 
 // Tenders
 Route::get('tenders', Tenders::class)->name('tenders');
 Route::get('three-quotation-tenders', ThreeQuotationTenders::class)->name('three-quotation-tenders');
 Route::get('purchase-of-documents', PurchaseOfDocuments::class)->name('purchase-of-documents');
 Route::get('download-tender-documents/{id}', DownloadTenderDocuments::class)->name('download-tender-documents');
+Route::get('blacklisted-firms', BlacklistedFirms::class)->name('blacklisted-firms');
+Route::get('blacklisting-mechanism', BlacklistingMechanism::class)->name('blacklisting-mechanism');
+Route::get('annual-procurement-plan', AnnualProcurementPlan202627::class)->name('annual-procurement-plan-2026-27');
 
 // Helpline & Complaints
 Route::get('how-customers-complain', HowCustomersComplain::class)->name('how-customers-complain');
@@ -177,6 +197,11 @@ Route::name('admin.')
         Route::livewire('blacklisted-firms', 'pages::admin.blacklist.index')->name('blacklist.index');
         Route::livewire('blacklisted-firms/create', 'pages::admin.blacklist.create')->name('blacklist.create');
         Route::livewire('blacklisted-firms/{blacklistedFirm}/edit', 'pages::admin.blacklist.edit')->name('blacklist.edit');
+
+        // Menus
+        Route::livewire('menus', 'pages::admin.menus.index')->name('menus.index');
+        Route::livewire('menus/create', 'pages::admin.menus.create')->name('menus.create');
+        Route::livewire('menus/{menu}/edit', 'pages::admin.menus.edit')->name('menus.edit');
     });
 
 

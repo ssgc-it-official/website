@@ -1,3 +1,6 @@
 <div>
-    {{-- Happiness is not something readymade. It comes from your own actions. - Dalai Lama --}}
+    <x-breadcrumb title="Form of Proxy (71st AGM)"
+                  watermark="Form of Proxy (71st AGM)"/>
+
+    <x-pdf href="#" :title="$title"/>
 </div>

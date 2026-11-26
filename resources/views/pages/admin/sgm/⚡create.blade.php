@@ -57,8 +57,8 @@ class extends Component {
 ?>
 
 <div>
-    <h4 class="mt-4">Senior General Managers</h4>
-    <h5 class="mt-4 text-xl">Add Senior General Managers</h5>
+    <h4 class="mt-4 text-gray-600">Senior General Managers</h4>
+    <h5 class="mt-4 text-xl text-gray-600">Add Senior General Managers</h5>
 
     <!-- Session Status -->
     <x-auth-session-status class="text-center" :status="session('status')"/>
