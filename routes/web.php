@@ -74,6 +74,8 @@ use App\Livewire\Web\TenYears;
 use App\Livewire\Web\ThreeQuotationTenders;
 use App\Livewire\Web\Vision;
 use App\Livewire\Web\WhistleBlowingMechanism;
+use App\Livewire\Web\FlameMagazine;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -221,4 +223,8 @@ Route::livewire('document/{slug}', 'livewire.web.pdf-page')->name('documents.sho
 Route::livewire('document-sections', 'pages::document-sections.index')->name('document-sections.index');
 Route::livewire('document-sections/create', 'pages::document-sections.form')->name('document-sections.create');
 Route::livewire('document-sections/{documentSection}/edit', 'pages::document-sections.form')->name('document-sections.edit');
-
+// Flame Magazine
+Route::livewire('flame-magazine', FlameMagazine::class)->name('flame-magazine');
+Route::livewire('flame-magazines', 'pages::flame-magazines.index')->name('flame-magazines.index');
+Route::livewire('flame-magazines/create', 'pages::flame-magazines.form')->name('flame-magazines.create');
+Route::livewire('flame-magazines/{flameMagazine}/edit', 'pages::flame-magazines.form')->name('flame-magazines.edit');
