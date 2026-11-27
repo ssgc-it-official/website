@@ -61,7 +61,7 @@ class extends Component {
 
         session()->flash('status', 'Director updated successfully.');
 
-        $this->redirectRoute('admin.director.index', $this->board);
+        $this->redirectRoute('admin.director.index');
     }
 };
 ?>

@@ -62,7 +62,7 @@ class extends Component {
                     />
                 </td>
                 <td class="text-center p-1">
-                    <flux:link :href="route('admin.blacklist.edit', $member)" wire:navigate>
+                    <flux:link :href="route('admin.director.edit', $member)" wire:navigate>
                         <flux:button type="submit" variant="outline" class="cursor-pointer">
                             <x-pen/>
                         </flux:button>
