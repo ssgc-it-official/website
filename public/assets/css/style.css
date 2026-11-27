@@ -55182,3 +55182,23 @@ ul.mega-menu-item.parent-nav {
 .border-orange {
     border-top: 5px solid; border-color: var(--color-primary)
 }
+.bg-primary-200 { background-color: var(--primary-200) !important; }
+.bg-primary-300 { background-color: var(--primary-300); }
+.text-primary-300 { color: var(--primary-300); }
+.border-primary-300 { border-color: var(--primary-300); }
+
+.form-inputs {
+    border-radius: 4px !important;
+    background-color: #eeeeee !important;
+    padding: 5px !important;
+    border:1px solid #e1e1e1 !important;
+}
+
+.form-inputs:focus {
+    outline: 1px solid #bbb;
+    outline-offset: 1px;
+    border-color: #ff5e14;
+    -webkit-box-shadow:0px 0px 3px 3px rgba(255,94,20,1);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(255,94,20,1);
+    box-shadow: 0px 0px 3px 3px rgba(255,94,20,1);
+}

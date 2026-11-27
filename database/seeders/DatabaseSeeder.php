@@ -32,5 +32,6 @@ class DatabaseSeeder extends Seeder
         $this->call(CapacityInfosTableSeeder::class);
         $this->call(BlacklistedFirmsTableSeeder::class);
         $this->call(MediaTableSeeder::class);
+        $this->call(FinancialReportsTableSeeder::class);
     }
 }

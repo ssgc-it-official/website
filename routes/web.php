@@ -175,30 +175,35 @@ Route::name('admin.')
     ->middleware('auth')
     ->group(function () {
         // Board of Directors
-        Route::livewire('director', 'pages::admin.bod.index')->name('director.index');
-        Route::livewire('director/create', 'pages::admin.bod.create')->name('director.create');
-        Route::livewire('director/{board}/edit', 'pages::admin.bod.edit')->name('director.edit');
+        Route::livewire('/director', 'pages::admin.bod.index')->name('director.index');
+        Route::livewire('/director/create', 'pages::admin.bod.create')->name('director.create');
+        Route::livewire('/director/{board}/edit', 'pages::admin.bod.edit')->name('director.edit');
 
         // Senior General Managers
-        Route::livewire('sgms', 'pages::admin.sgm.index')->name('sgms.index');
-        Route::livewire('sgms/create', 'pages::admin.sgm.create')->name('sgms.create');
-        Route::livewire('sgms/{sgm}/edit', 'pages::admin.sgm.edit')->name('sgms.edit');
+        Route::livewire('/sgms', 'pages::admin.sgm.index')->name('sgms.index');
+        Route::livewire('/sgms/create', 'pages::admin.sgm.create')->name('sgms.create');
+        Route::livewire('/sgms/{sgm}/edit', 'pages::admin.sgm.edit')->name('sgms.edit');
 
         // General Managers
-        Route::livewire('gms', 'pages::admin.gm.index')->name('gms.index');
-        Route::livewire('gms/create', 'pages::admin.gm.create')->name('gms.create');
-        Route::livewire('gms/{gm}/edit', 'pages::admin.gm.edit')->name('gms.edit');
+        Route::livewire('/gms', 'pages::admin.gm.index')->name('gms.index');
+        Route::livewire('/gms/create', 'pages::admin.gm.create')->name('gms.create');
+        Route::livewire('/gms/{gm}/edit', 'pages::admin.gm.edit')->name('gms.edit');
 
         // Capacity Info
-        Route::livewire('capacity-info', 'pages::admin.capacity.edit')->name('capacity-info.edit');
+        Route::livewire('/capacity-info', 'pages::admin.capacity.edit')->name('capacity-info.edit');
 
         // Blacklisted Firms
-        Route::livewire('blacklisted-firms', 'pages::admin.blacklist.index')->name('blacklist.index');
-        Route::livewire('blacklisted-firms/create', 'pages::admin.blacklist.create')->name('blacklist.create');
-        Route::livewire('blacklisted-firms/{blacklistedFirm}/edit', 'pages::admin.blacklist.edit')->name('blacklist.edit');
+        Route::livewire('/blacklisted-firms', 'pages::admin.blacklist.index')->name('blacklist.index');
+        Route::livewire('/blacklisted-firms/create', 'pages::admin.blacklist.create')->name('blacklist.create');
+        Route::livewire('/blacklisted-firms/{blacklistedFirm}/edit', 'pages::admin.blacklist.edit')->name('blacklist.edit');
+
+        // Financial Reports
+        Route::livewire('/financial-reports', 'pages::admin.financial-reports.index')->name('financial-reports.index');
+        Route::livewire('/financial-reports/create', 'pages::admin.financial-reports.create')->name('financial-reports.create');
+        Route::livewire('/financial-reports/{report}/edit', 'pages::admin.financial-reports.edit')->name('financial-reports.edit');
 
         // Menus
-        Route::livewire('menus', 'pages::admin.menus.index')->name('menus.index');
-        Route::livewire('menus/create', 'pages::admin.menus.create')->name('menus.create');
-        Route::livewire('menus/{menu}/edit', 'pages::admin.menus.edit')->name('menus.edit');
+        Route::livewire('/menus', 'pages::admin.menus.index')->name('menus.index');
+        Route::livewire('/menus/create', 'pages::admin.menus.create')->name('menus.create');
+        Route::livewire('/menus/{menu}/edit', 'pages::admin.menus.edit')->name('menus.edit');
     });
