@@ -23,13 +23,12 @@
 @endphp
 
 <li class="{{ implode(' ', $liClasses) }}">
-    <a href="{{ $item->url ?? '#' }}" @if(!empty($item->target)) target="{{ $item->target }}" @endif class="nav-link">
+
+    <a href="{{ url($item->url) ?? '#' }}" @if(!empty($item->target)) target="{{ $item->target }}" @endif class="nav-link">
         <span>{{ $item->title }}</span>
     </a>
-
     @if($hasChildren)
         @if($isMega)
-            {{-- Megamenu Container --}}
             @include('partials.navbar-megamenu', ['item' => $item])
         @else
             {{-- Standard Recursive Dropdown --}}
@@ -41,3 +40,4 @@
         @endif
     @endif
 </li>
+

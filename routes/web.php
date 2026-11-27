@@ -74,6 +74,9 @@ use App\Livewire\Web\TenYears;
 use App\Livewire\Web\ThreeQuotationTenders;
 use App\Livewire\Web\Vision;
 use App\Livewire\Web\WhistleBlowingMechanism;
+use App\Livewire\Web\FlameMagazine;
+use App\Livewire\Web\MediaDetail;
+use App\Livewire\Web\MediaList;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -108,9 +111,9 @@ Route::get('capacity-info-sindh', CapacityInfoSindh::class)->name('capacity-info
 Route::get('capacity-info-karachi', CapacityInfoKarachi::class)->name('capacity-info-karachi');
 Route::get('capacity-info-balochistan', CapacityInfoBalochistan::class)->name('capacity-info-balochistan');
 Route::get('list-of-focal-persons', FocalPersons::class)->name('list-of-focal-persons');
-Route::get('environmental-impact-assessment', EnvironmentalImpactAssessment::class)->name('environmental-impact-assessment');
+// Route::get('environmental-impact-assessment', EnvironmentalImpactAssessment::class)->name('environmental-impact-assessment');
+// Route::get('web/{slug}', EnvironmentalImpactAssessment::class);
 Route::get('whistle-blowing-mechanism', WhistleBlowingMechanism::class)->name('whistle-blowing-mechanism');
-
 // Financial
 Route::get('ten-years-at-a-glance', TenYears::class)->name('ten-years-at-glance');
 Route::get('financial-reports', FinancialReports::class)->name('financial-reports');
@@ -167,7 +170,7 @@ Route::get('important-numbers', ImportantNumbers::class)->name('important-number
 Route::get('customer-facilitation-centers', CustomerFacilitationCenters::class)->name('customer-facilitation-centers');
 Route::get('check-for-leakages', CheckForLeakages::class)->name('check-for-leakages');
 Route::get('safety-education', SafetyEducation::class)->name('safety-education');
-require __DIR__.'/settings.php';
+require __DIR__ . '/settings.php';
 
 // Admin Section
 Route::name('admin.')
@@ -207,3 +210,30 @@ Route::name('admin.')
         Route::livewire('/menus/create', 'pages::admin.menus.create')->name('menus.create');
         Route::livewire('/menus/{menu}/edit', 'pages::admin.menus.edit')->name('menus.edit');
     });
+
+Route::get('document-sections/{documentSection:slug}/file', function (\App\Models\DocumentSection $documentSection) {
+    $media = $documentSection->getFirstMedia('pdf');
+    abort_unless($media, 404);
+    return redirect($media->getUrl());
+})->name('document-sections.file');
+
+Route::get('document-sections/{documentSection:slug}/download', function (\App\Models\DocumentSection $documentSection) {
+    $media = $documentSection->getFirstMedia('pdf');
+    abort_unless($media, 404);
+    return $media;
+})->name('document-sections.download');
+
+// urooj routes
+Route::livewire('document/{slug}', 'livewire.web.pdf-page')->name('documents.show');
+// Document Sections
+Route::livewire('document-sections', 'pages::document-sections.index')->name('document-sections.index');
+Route::livewire('document-sections/create', 'pages::document-sections.form')->name('document-sections.create');
+Route::livewire('document-sections/{documentSection}/edit', 'pages::document-sections.form')->name('document-sections.edit');
+// Flame Magazine
+// Route::livewire('flame-magazine', FlameMagazine::class)->name('flame-magazine');
+Route::livewire('media-posts', 'pages::media-posts.index')->name('media-posts.index');
+Route::livewire('media-posts/create', 'pages::media-posts.form')->name('media-posts.create');
+Route::livewire('media-posts/{mediaPost}/edit', 'pages::media-posts.form')->name('media-posts.edit');
+
+Route::get('media/{categorySlug}', MediaList::class)->name('media.list');
+Route::get('media/{categorySlug}/{postSlug}', MediaDetail::class)->name('media.show');

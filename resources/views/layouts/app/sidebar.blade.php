@@ -71,17 +71,6 @@
             </flux:sidebar.nav>
 
             <flux:sidebar.nav>
-                <flux:sidebar.group :heading="__('Financial Reports')" class="grid">
-                    <flux:sidebar.item icon="plus" :href="route('admin.financial-reports.index')" :current="request()->routeIs('dashboard')" wire:navigate>
-                        {{ __('View') }}
-                    </flux:sidebar.item>
-                    <flux:sidebar.item icon="plus" :href="route('admin.financial-reports.create')" :current="request()->routeIs('dashboard')" wire:navigate>
-                        {{ __('Add') }}
-                    </flux:sidebar.item>
-                </flux:sidebar.group>
-            </flux:sidebar.nav>
-
-            <flux:sidebar.nav>
                 <flux:sidebar.group :heading="__('Menus')" class="grid">
                     <flux:sidebar.item icon="plus" :href="route('admin.menus.index')" :current="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('View') }}

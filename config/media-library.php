@@ -155,6 +155,8 @@ return [
         // Model::class => PathGenerator::class
         // or
         // 'model_morph_alias' => PathGenerator::class
+        \App\Models\FlameMagazine::class => \App\Support\FlameMagazinePathGenerator::class,
+        \App\Models\MediaPost::class => \App\Support\MediaPostPathGenerator::class,
     ],
 
     /*
