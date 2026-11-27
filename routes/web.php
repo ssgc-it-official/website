@@ -75,7 +75,8 @@ use App\Livewire\Web\ThreeQuotationTenders;
 use App\Livewire\Web\Vision;
 use App\Livewire\Web\WhistleBlowingMechanism;
 use App\Livewire\Web\FlameMagazine;
-
+use App\Livewire\Web\MediaDetail;
+use App\Livewire\Web\MediaList;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -224,7 +225,10 @@ Route::livewire('document-sections', 'pages::document-sections.index')->name('do
 Route::livewire('document-sections/create', 'pages::document-sections.form')->name('document-sections.create');
 Route::livewire('document-sections/{documentSection}/edit', 'pages::document-sections.form')->name('document-sections.edit');
 // Flame Magazine
-Route::livewire('flame-magazine', FlameMagazine::class)->name('flame-magazine');
-Route::livewire('flame-magazines', 'pages::flame-magazines.index')->name('flame-magazines.index');
-Route::livewire('flame-magazines/create', 'pages::flame-magazines.form')->name('flame-magazines.create');
-Route::livewire('flame-magazines/{flameMagazine}/edit', 'pages::flame-magazines.form')->name('flame-magazines.edit');
+// Route::livewire('flame-magazine', FlameMagazine::class)->name('flame-magazine');
+Route::livewire('media-posts', 'pages::media-posts.index')->name('media-posts.index');
+Route::livewire('media-posts/create', 'pages::media-posts.form')->name('media-posts.create');
+Route::livewire('media-posts/{mediaPost}/edit', 'pages::media-posts.form')->name('media-posts.edit');
+
+Route::get('media/{categorySlug}', MediaList::class)->name('media.list');
+Route::get('media/{categorySlug}/{postSlug}', MediaDetail::class)->name('media.show');

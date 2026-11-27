@@ -12,7 +12,7 @@ class FlameMagazine extends Model implements HasMedia
 {
     use InteractsWithMedia;
 
-    protected $fillable = ['title', 'published_at', 'is_active'];
+    protected $fillable = ['title', 'published_at', 'is_active','category_id'];
 
     protected $casts = [
         'published_at' => 'date',

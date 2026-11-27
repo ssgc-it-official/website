@@ -21,17 +21,10 @@ default => 'col-lg-12',
                     <ul class="mega-menu-item with-list parent-nav">
                         @foreach($chunk as $subItem)
                         <li>
-                            {{-- @if($subItem->title == 'Environmental Impact Assessment RLNG-II')
-                             <a href="{{ url('document/environmental-impact-assessment') }}" @if(!empty($subItem->target)) target="{{
+                            <a href="{{ url($subItem->url) ?? '#' }}" @if(!empty($subItem->target)) target="{{
                                 $subItem->target }}" @endif>
                                 {{ $subItem->title }}
                             </a>
-                            @else --}}
-                            <a href="{{ $subItem->url ?? '#' }}" @if(!empty($subItem->target)) target="{{
-                                $subItem->target }}" @endif>
-                                {{ $subItem->title }}
-                            </a>
-                            {{-- @endif --}}
                         </li>
                         @endforeach
                     </ul>

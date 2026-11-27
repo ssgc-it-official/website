@@ -120,11 +120,11 @@
         </flux:sidebar.nav>
          <flux:sidebar.nav>
             <flux:sidebar.group :heading="__('Flame Magazine')" class="grid">
-                <flux:sidebar.item icon="plus" :href="route('flame-magazines.index')"
+                <flux:sidebar.item icon="plus" :href="route('media-posts.index')"
                     :current="request()->routeIs('dashboard')" wire:navigate>
                     {{ __('View') }}
                 </flux:sidebar.item>
-                <flux:sidebar.item icon="plus" :href="route('flame-magazines.create')"
+                <flux:sidebar.item icon="plus" :href="route('media-posts.create')"
                     :current="request()->routeIs('dashboard')" wire:navigate>
                     {{ __('Add') }}
                 </flux:sidebar.item>
